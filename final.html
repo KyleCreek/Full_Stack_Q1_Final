@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creek Final</title>
+	<link rel="stylesheet" href="final.css"/>
+  </head>
+
+  <body>
+	<div id="moving-box">
+	</div>
+
+	<!-- This Form is What I'll Use to Call the API-->
+	<div>
+		Select A Sport Below and See Yesterdays Score!
+	</div>
+	<form>
+		<label for="zipcode">Get The Weather</label>
+		<input id="zipcode" type="text">
+		<button id="submit">Submit</button>
+	</form>
+	<!-- This is Where I will Display the Fetch Information-->
+	<div id="weather-display">
+	</div>
+	<!-- This is Where I'll Handle the Local Storage Stuff -->
+	<div id="local-storage">
+		Here is the Stuff from Local Storage:
+		<ul id="local-storage-list">
+		</ul>
+		<br>
+		<p>Utilize the Form Below to Add to Local Storage</p>
+		<form id="local-storage-form">
+			<label for="key">Key:</label>
+			<input type="text" id="key" name="key" required>
+			<br>
+			<label for="value">Value:</label>
+			<input type="text" id="value" name="value" required>
+			<br>
+			<button id="local-submit">Submit</button>
+		</form>
+	</div>
+	<script src="final.js"></script>
+  </body>
+</html>
